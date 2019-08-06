@@ -1,0 +1,38 @@
+
+
+  <div class="container">
+    
+    <form action="/crear" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="nombre">nombre</label>
+        <input type="text" class="form-control" name="nombre" id="nombre" >
+      </div>
+    
+    
+      <div class="form-group">
+        <label for="descripcion">Apellidos</label>
+        <input type="text" class="form-control" name="descripcion" id="descripcion" >
+      </div>
+      <div class="form-group">
+        <label for="genero">Seleccione su Sexo</label>
+        <select class="form-control" name="genero" id="genero">
+          <option value="0">Hombre</option>
+          <option value="1">Mujer</option>
+        </select>
+      </div>
+       <div class="form-group">
+         <label for="imagen">Imagen</label>
+         <input type="file" name="imagen" class="form-control-file" id="imagen"accept="image/*">
+       </div>
+  
+      <div class="form-group">
+        <label for="precio">direccion</label>
+        <input type="text" class="form-control" name="precio" id="Precio" >
+      </div>
+      <button type="submit">Registrar</button>
+
+    </form>
+
+
+  </div>
+

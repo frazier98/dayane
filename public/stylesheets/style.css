@@ -1,0 +1,15 @@
+body {
+  min-height: 100vh;
+  padding-top: 90px; 
+}
+
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+}
+
+.fixed-theme {
+  transition: 0.8s;
+}
+

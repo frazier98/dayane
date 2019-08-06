@@ -1,0 +1,39 @@
+<div class="container">
+
+  <form action="/update/{{catalogos._id}}" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="nombre">nombre</label>
+      <input type="text" class="form-control" name="nombre" value="{{catalogos.nombre}}" id="nombre">
+    </div>
+    <div class="form-group">
+      <label for="descripcion">Apellido</label>
+      <input type="text" class="form-control" name="descripcion" value="{{catalogos.descripcion}}" id="descripcion">
+    </div>
+
+
+    <div class="form-group">
+      <label for="genero">Seleccione su Sexo</label>
+      <select class="form-control" name="genero" id="genero">
+        <option value="0" {{#if seletvalue.selectHombre}} selected="selected" {{/if}}>Hombre</option>
+        <option value="1" {{#if seletvalue.selectMujer}} selected="selected" {{/if}}>Mujer</option>
+      </select>
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="imagen">Imagen</label>
+      <input type="file" name="imagen" class="form-control-file" id="imagen" accept="image/*">
+      <input type="text" name="imgUrl" value="{{catalogos.imagenUrl}}">
+    </div>
+
+    <div class="form-group">
+      <label for="precio">Direccion</label>
+      <input type="text" class="form-control" value="{{catalogos.precio}}" name="precio" id="Precio">
+    </div>
+    <button type="submit">Modificar</button>
+
+  </form>
+
+
+</div>
